@@ -9,7 +9,10 @@ const signupForm = document.getElementById("signupForm");
 signupForm.addEventListener("submit", async (e) => {
 
     e.preventDefault();
-
+    console.log(document.getElementById("fullName"));
+    console.log(document.getElementById("email"));
+    console.log(document.getElementById("password"));
+    console.log(document.getElementById("confirmPassword"));
     const fullName = document.getElementById("fullName").value.trim();
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value;
