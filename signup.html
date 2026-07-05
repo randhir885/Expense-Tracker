@@ -1,35 +1,99 @@
-<label>Full Name</label>
+<!DOCTYPE html>
+<html lang="en">
 
-<input
-    type="text"
-    id="fullName"
-    placeholder="Enter your name"
-    required
->
+<head>
 
-<label>Email</label>
+    <meta charset="UTF-8">
 
-<input
-    type="email"
-    id="email"
-    placeholder="Enter your email"
-    required
->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<label>Password</label>
+    <title>Create Account | Expense Tracker</title>
 
-<input
-    type="password"
-    id="password"
-    placeholder="Create password"
-    required
->
+    <link rel="stylesheet" href="css/login.css">
 
-<label>Confirm Password</label>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<input
-    type="password"
-    id="confirmPassword"
-    placeholder="Confirm password"
-    required
->
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="login-card">
+
+            <h1>Create Account</h1>
+
+            <p>Create your free Expense Tracker account.</p>
+
+            <form id="signupForm">
+
+                <label for="fullName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create password"
+                    required
+                >
+
+                <label for="confirmPassword">Confirm Password</label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm password"
+                    required
+                >
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+            <div class="bottom-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </div>
+
+            <div class="back-home">
+
+                <a href="index.html">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/signup.js"></script>
+
+</body>
+
+</html>
